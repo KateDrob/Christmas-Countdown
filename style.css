@@ -1,0 +1,98 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1603793303277-ed67787545e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2FudGF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #FF0000;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    background-color: rgba(251, 248, 249, 0.9);
+    padding: 15px;
+    border: black solid 3px;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.christmas {
+    background-color: rgba(251, 248, 249, 0.82);
+    width: 180px;
+    height: 280px;
+    border: black solid 3px;
+    margin-top: 80px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.days, .hours, .minutes, .seconds {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.red {
+    font-size: 55px;
+    border: none;
+    font-family: 'Staatliches', cursive;
+    color: red;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#myButton {
+    margin-left: 80px;
+    border: none;
+}
+
+#stop {
+    margin-left: 30px;
+    width: 80px;
+    border: none;
+}
+
+@media all and (max-width:500px) {
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  #myButton, #stop {
+    margin: 0;
+    width: 80px;
+  }
+  body {
+    background-position: center;
+  }
+  .christmas {
+    height: 160px;
+    margin-top: 50px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .days, .hours, .minutes, .seconds {
+    font-size: 30px;
+  }
+}
